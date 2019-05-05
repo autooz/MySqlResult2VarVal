@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Исходные файлы"
+                   projectFiles="true">
+      <logicalFolder name="f1" displayName="LIB" projectFiles="true">
+        <itemPath>LIB/db_mysql_threded.c</itemPath>
+        <itemPath>LIB/db_mysql_threded.h</itemPath>
+        <itemPath>LIB/debug.c</itemPath>
+        <itemPath>LIB/makeQueryToDb.c</itemPath>
+        <itemPath>LIB/mysql_creat_var_val_struct.c</itemPath>
+        <itemPath>LIB/mysql_select.c</itemPath>
+        <itemPath>LIB/mysql_select.h</itemPath>
+        <itemPath>LIB/mysql_select_multy.c</itemPath>
+        <itemPath>LIB/mysql_select_multy.h</itemPath>
+      </logicalFolder>
+      <itemPath>main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Файлы заголовков"
+                   projectFiles="true">
+      <itemPath>lib.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Файлы ресурсов"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Файлы тестов"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f1"
+                     displayName="SQL_for_TEST"
+                     projectFiles="true"
+                     kind="TEST">
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>true</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <standard>3</standard>
+          <incDir>
+            <pElem>/usr/include/mysql</pElem>
+            <pElem>/usr/include</pElem>
+            <pElem>/usr/share/call-taxi</pElem>
+          </incDir>
+          <commandLine>-I/usr/include -fno-omit-frame-pointer -g -pipe -Wno-uninitialized -g -static-libgcc -fno-omit-frame-pointer -fno-strict-aliasing -DMY_PTHREAD_FASTMUTEX=1 -lmysqlclient</commandLine>
+          <preprocessorList>
+            <Elem>BIG_JOINS=1</Elem>
+          </preprocessorList>
+        </cTool>
+      </compileType>
+      <item path="LIB/db_mysql_threded.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/db_mysql_threded.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LIB/debug.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/makeQueryToDb.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/mysql_creat_var_val_struct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/mysql_select.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/mysql_select.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LIB/mysql_select_multy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/mysql_select_multy.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <item path="lib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="LIB/db_mysql_threded.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/db_mysql_threded.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LIB/debug.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/makeQueryToDb.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/mysql_creat_var_val_struct.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/mysql_select.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/mysql_select.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="LIB/mysql_select_multy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="LIB/mysql_select_multy.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <item path="lib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
