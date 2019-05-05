@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=mysql_test
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/mysql_test
+CND_ARTIFACT_NAME_Debug=mysqlresult2varval
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/mysqlresult2varval
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=mysqltest.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/mysqltest.tar
+CND_PACKAGE_NAME_Debug=mysqlresult2varval.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/mysqlresult2varval.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=mysql_test
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/mysql_test
+CND_ARTIFACT_NAME_Release=mysqlresult2varval
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/mysqlresult2varval
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=mysqltest.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/mysqltest.tar
+CND_PACKAGE_NAME_Release=mysqlresult2varval.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/mysqlresult2varval.tar
 #
 # include compiler specific variables
 #

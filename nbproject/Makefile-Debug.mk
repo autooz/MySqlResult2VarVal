@@ -51,7 +51,8 @@ TESTFILES= \
 	${TESTDIR}/TestFiles/f1
 
 # Test Object Files
-TESTOBJECTFILES=
+TESTOBJECTFILES= \
+	${TESTDIR}/tests/newsimpletest.o
 
 # C Compiler Flags
 CFLAGS=-I/usr/include -fno-omit-frame-pointer -g -pipe -Wno-uninitialized -g -static-libgcc -fno-omit-frame-pointer -fno-strict-aliasing -DMY_PTHREAD_FASTMUTEX=1 -lmysqlclient
@@ -71,11 +72,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mysql_test
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mysqlresult2varval
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mysql_test: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mysqlresult2varval: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mysql_test ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/mysqlresult2varval ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/LIB/db_mysql_threded.o: LIB/db_mysql_threded.c nbproject/Makefile-${CND_CONF}.mk
 	${MKDIR} -p ${OBJECTDIR}/LIB
@@ -119,9 +120,15 @@ ${OBJECTDIR}/main.o: main.c nbproject/Makefile-${CND_CONF}.mk
 .build-tests-conf: .build-tests-subprojects .build-conf ${TESTFILES}
 .build-tests-subprojects:
 
-${TESTDIR}/TestFiles/f1: ${OBJECTFILES:%.o=%_nomain.o}
+${TESTDIR}/TestFiles/f1: ${TESTDIR}/tests/newsimpletest.o ${OBJECTFILES:%.o=%_nomain.o}
 	${MKDIR} -p ${TESTDIR}/TestFiles
 	${LINK.c} -o ${TESTDIR}/TestFiles/f1 $^ ${LDLIBSOPTIONS}   
+
+
+${TESTDIR}/tests/newsimpletest.o: tests/newsimpletest.c 
+	${MKDIR} -p ${TESTDIR}/tests
+	${RM} "$@.d"
+	$(COMPILE.c) -g -DBIG_JOINS=1 -I/usr/include/mysql -I/usr/include -I/usr/share/call-taxi -I. -std=c99 -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/newsimpletest.o tests/newsimpletest.c
 
 
 ${OBJECTDIR}/LIB/db_mysql_threded_nomain.o: ${OBJECTDIR}/LIB/db_mysql_threded.o LIB/db_mysql_threded.c 

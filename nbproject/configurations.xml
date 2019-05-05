@@ -34,6 +34,7 @@
                      displayName="SQL_for_TEST"
                      projectFiles="true"
                      kind="TEST">
+        <itemPath>tests/newsimpletest.c</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
@@ -102,6 +103,8 @@
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="tests/newsimpletest.c" ex="false" tool="0" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -159,6 +162,8 @@
       <item path="lib.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/newsimpletest.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
