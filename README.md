@@ -1,6 +1,6 @@
 # MySqlResult2VarVal
 
-For UNIX like OS only.
+**For UNIX like OS only.**
 
 Saving in the structure MySql requests result as char of variable: value
 
