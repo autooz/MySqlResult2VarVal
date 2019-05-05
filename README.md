@@ -4,7 +4,7 @@ Saving in the structure MySql requests result as char of variable: value
 How to start
 
 
-Add changes for your own values:
+Add changes for your own values in lib.h file:
 
 #define DB_HOST "localhost" / * Define host default is "localhost" * / 
 
