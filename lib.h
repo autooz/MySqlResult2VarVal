@@ -35,8 +35,8 @@ extern "C" {
 //#define DB_HOST "193.150.6.36"      /* Define host default is "localhost"*/
 #define DB_HOST "localhost"      /* Define host default is "localhost"*/
 #define DB_PORT 20033             /* Define port default is "3306"*/
-#define DB_USER "atda_clent" 
-#define DB_PASWD "UoYCT1gjXnUZ9Scp"          /* Define user password Desktop"*/
+#define DB_USER "username" 
+#define DB_PASWD "userpasswd"          /* Define user password Desktop"*/
 
 
 #define DB_UNIX_SOCKET NULL      /* Define unix socket default is "NULL"*/
