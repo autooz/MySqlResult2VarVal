@@ -11,3 +11,10 @@ Add changes for your own values:
 #define DB_USER "username"
 
 #define DB_PASWD "userpasswd" / * Define user password * 
+
+
+Specify the database name in the main.c file (char db [] = "dbname";) Line 29;
+
+Then add  query that is in the file located tests/newsimpletest.c to MySql according to the changed database name (char db [] = "dbname";)
+
+
